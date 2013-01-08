@@ -4,6 +4,7 @@
 if [ "$PS1" ]; then
 
     source ~/.git-prompt.sh    # fancy prompt
+    source ~/.git-completion.bash
     BLACK=$(tput setaf 0)
     RED=$(tput setaf 1)
     GREEN=$(tput setaf 2)
