@@ -22,7 +22,7 @@ if [ "$PS1" ]; then
     UNDERLINE=$(tput smul)
 
 
-  PS1='\[${RED}\]\u\[${BLUE}\]@\[${YELLOW}\]\h\[${BLUE}\]:\[${NORMAL}\]\W \[${CYAN}\]$(__git_ps1) \[${WHITE}\][\t]\n\[${NORMAL}\]$ '
+  PS1='\[${RED}\]\u\[${BLUE}\]@\[${YELLOW}\]\h\[${BLUE}\]:\[${NORMAL}\]\w \[${CYAN}\]$(__git_ps1) \[${WHITE}\][\t]\n\[${NORMAL}\]$ '
 fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
