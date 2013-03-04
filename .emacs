@@ -52,3 +52,11 @@
 (setq frame-title-format
       (list (format "%s %%S: %%j " (system-name))
         '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
+
+
+(defun get-abs-path ()
+  "Get the absolute path of the current working buffer, including filename and place it into the kill ring"
+  (interactive)
+  (kill-new (buffer-file-name)))
+
+(global-set-key [f5] 'get-abs-path)
