@@ -1,0 +1,11 @@
+[user]
+        name = Thang Nguyen
+        email = thang@thangnguyen.us
+[alias]
+        stat = status
+        st = status
+        ci = commit
+        co = checkout
+        br = branch
+[color]
+        ui = true
