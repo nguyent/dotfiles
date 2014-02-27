@@ -1,5 +1,4 @@
 (setq inhibit-startup-message t)
-(global-unset-key "\C-x\C-b")
 (cua-selection-mode 1) ; C-RET for visual rect selection
 (show-paren-mode 1)
 (setq show-paren-delay 0)
@@ -12,6 +11,8 @@
 (column-number-mode t)
 (ido-mode t)
 (setq-default indent-tabs-mode nil)
+
+(setq js-indent-level 2) ;emacs 23
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
