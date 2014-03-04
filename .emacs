@@ -66,3 +66,9 @@
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
+
+(add-hook 'after-init-hook 'ecb-after-init-hook)
+(defun ecb-after-init-hook ()
+  (setq ecb-tip-of-the-day nil)
+  (ecb-minor-mode)
+  (global-set-key (kbd "C-x x") 'ecb-toggle-ecb-windows))
