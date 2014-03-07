@@ -72,3 +72,12 @@
   (setq ecb-tip-of-the-day nil)
   (ecb-minor-mode)
   (global-set-key (kbd "C-x x") 'ecb-toggle-ecb-windows))
+
+(define-globalized-minor-mode real-global-auto-complete-mode
+  auto-complete-mode (lambda ()
+                       (if (not (minibufferp (current-buffer)))
+                         (auto-complete-mode 1))
+                       ))
+(real-global-auto-complete-mode t)
+
+;; package-installed: ecb, ac
