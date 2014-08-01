@@ -1,6 +1,7 @@
 (setq inhibit-startup-message t)
 (cua-selection-mode 1) ; C-RET for visual rect selection
 (show-paren-mode 1)
+(global-unset-key "\C-z") 
 (setq show-paren-delay 0)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
