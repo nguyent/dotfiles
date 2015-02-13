@@ -1,5 +1,9 @@
 # .bashrc
 
+# history unification across sessions
+shopt -s histappend
+PROMPT_COMMAND="history -a; history -c; history -r"
+
 # User specific aliases and functions
 if [ "$PS1" ]; then
 
