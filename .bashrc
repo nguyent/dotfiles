@@ -25,3 +25,6 @@ if [ "$PS1" ]; then
 fi
 
 export GREP_OPTIONS='--color=auto'
+alias gcd='cd `git rev-parse --show-toplevel`'
+alias gg='git grep'
+alias psrv='python3 -m http.server'
