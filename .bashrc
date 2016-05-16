@@ -27,4 +27,5 @@ fi
 export GREP_OPTIONS='--color=auto'
 alias gcd='cd `git rev-parse --show-toplevel`'
 alias gg='git grep'
+alias grh='git reset --hard HEAD'
 alias psrv='python3 -m http.server'
