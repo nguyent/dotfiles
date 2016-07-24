@@ -29,3 +29,10 @@ alias gcd='cd `git rev-parse --show-toplevel`'
 alias gg='git grep'
 alias grh='git reset --hard HEAD'
 alias psrv='python3 -m http.server'
+alias src='. ~/.bashrc'
+
+source '~/.docker-completion.sh' # via https://github.com/docker/docker/blob/master/contrib/completion/bash/docker
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then # via brew
+   . $(brew --prefix)/etc/bash_completion
+fi
