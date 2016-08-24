@@ -29,6 +29,8 @@ alias gcd='cd `git rev-parse --show-toplevel`'
 alias gg='git grep'
 alias grh='git reset --hard HEAD'
 alias psrv='python3 -m http.server'
+alias ppjson='python -m json.tool'
+
 alias src='. ~/.bashrc'
 
 source '~/.docker-completion.sh' # via https://github.com/docker/docker/blob/master/contrib/completion/bash/docker
