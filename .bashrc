@@ -38,3 +38,8 @@ source '~/.docker-completion.sh' # via https://github.com/docker/docker/blob/mas
 if [ -f $(brew --prefix)/etc/bash_completion ]; then # via brew
    . $(brew --prefix)/etc/bash_completion
 fi
+
+# OS X colored output for ls
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+alias ls='ls -G'
