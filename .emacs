@@ -168,3 +168,15 @@ Return a list of installed packages or nil for every skipped package."
 (projectile-global-mode)
 (setq projectile-completion-system 'helm)
 (helm-projectile-on)
+
+
+;; Generated from:
+;;   M-x name-last-kbd-macro RET (name) RET
+;;   M-x insert-kbd-macro RET (name) RET
+;; via: http://stackoverflow.com/questions/4535666/how-do-i-bind-a-key-to-the-function-represented-by-the-following-key-sequence
+(global-set-key (kbd "C-x y") (fset 'spaces-to-lines
+   [?\M-x ?r ?e ?p ?l ?a ?c ?e ?- ?s ?t ?r ?i ?n ?g return ?  return ?\C-q ?\C-j return]))
+
+(global-set-key (kbd "C-x t") (fset 'lines-to-spaces
+   [?\M-x ?r ?e ?p ?l ?a ?c ?e ?- ?s ?t ?r ?i ?n ?g return ?\C-q ?\C-j return ?  return]))
+
