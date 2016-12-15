@@ -8,6 +8,7 @@
         co = checkout
         br = branch
         lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+        peek = stash show -p stash@{0}
 [color]
         ui = true
 [filter "media"]
