@@ -43,3 +43,11 @@ fi
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 alias ls='ls -G'
+
+# Git root grep
+grg()
+{
+    gcd
+    gg $1
+    cd -
+}
