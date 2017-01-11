@@ -48,6 +48,6 @@ alias ls='ls -G'
 grg()
 {
     gcd
-    gg $1
-    cd -
+    gg "$1"
+    : $(cd -)
 }
