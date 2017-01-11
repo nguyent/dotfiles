@@ -49,5 +49,5 @@ grg()
 {
     gcd
     gg "$1"
-    : $(cd -)
+    cd - > /dev/null 2>&1
 }
