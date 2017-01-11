@@ -128,10 +128,11 @@ Return a list of installed packages or nil for every skipped package."
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key "\C-x\C-b" 'helm-buffers-list)
 (global-auto-complete-mode t)
-(helm-mode 1)
 
 
 ;; HELM STUFF
+(require 'helm)
+(require 'helm-config)
 
 (global-set-key (kbd "C-c h") 'helm-command-prefix)
 (global-unset-key (kbd "C-x c"))
@@ -168,7 +169,7 @@ Return a list of installed packages or nil for every skipped package."
 (projectile-global-mode)
 (setq projectile-completion-system 'helm)
 (helm-projectile-on)
-
+(helm-mode 1)
 
 ;; Generated from:
 ;;   M-x name-last-kbd-macro RET (name) RET
