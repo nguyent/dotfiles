@@ -21,7 +21,7 @@ if [ "$PS1" ]; then
     REVERSE=$(tput smso)
     UNDERLINE=$(tput smul)
 
-    PS1='⎲  \[${WHITE}\][\t] \[${RED}\]\u\[${BLUE}\]@\[${YELLOW}\]\h\[${BLUE}\]:\[${NORMAL}\]\w \[${CYAN}\]$(__git_ps1)\n${WHITE}\342\216\263  \[${NORMAL}\]$ '
+    PS1='\342\216\262  \[${WHITE}\][\t] \[${RED}\]\u\[${BLUE}\]@\[${YELLOW}\]\h\[${BLUE}\]:\[${NORMAL}\]\w \[${CYAN}\]$(__git_ps1)\n${WHITE}\342\216\263  \[${NORMAL}\]$ '
 fi
 
 export GREP_OPTIONS='--color=auto'
