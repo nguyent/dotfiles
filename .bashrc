@@ -30,10 +30,7 @@ alias gg='git grep'
 alias grh='git reset --hard HEAD'
 alias psrv='python3 -m http.server'
 alias ppjson='python -m json.tool'
-
 alias src='. ~/.bashrc'
-
-source '~/.docker-completion.sh' # via https://github.com/docker/docker/blob/master/contrib/completion/bash/docker
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then # via brew
    . $(brew --prefix)/etc/bash_completion
@@ -48,6 +45,6 @@ alias ls='ls -G'
 grg()
 {
     gcd
-    gg "$1"
+    gg "$@"
     cd - > /dev/null 2>&1
 }
