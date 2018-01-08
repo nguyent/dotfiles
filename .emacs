@@ -3,6 +3,7 @@
 (cua-selection-mode 1) ; C-RET for visual rect selection
 (show-paren-mode 1)
 (setq show-paren-delay 0)
+(global-set-key (kbd "C-x O") 'previous-multiframe-window)
 
 (if window-system
     (progn
