@@ -172,6 +172,11 @@ Return a list of installed packages or nil for every skipped package."
 (helm-projectile-on)
 (helm-mode 1)
 
+;; via https://carlfg.wordpress.com/2013/10/21/insert-shebang-extension-for-emacs/
+(require 'insert-shebang)
+(add-hook 'find-file-hook 'insert-shebang)
+
+
 ;; Generated from:
 ;;   M-x name-last-kbd-macro RET (name) RET
 ;;   M-x insert-kbd-macro RET (name) RET
