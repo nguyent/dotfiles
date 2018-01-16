@@ -4,6 +4,8 @@
 (show-paren-mode 1)
 (setq show-paren-delay 0)
 (global-set-key (kbd "C-x O") 'previous-multiframe-window)
+(global-set-key (kbd "s-}") 'forward-paragraph)
+(global-set-key (kbd "s-{") 'backward-paragraph)
 
 (if window-system
     (progn
@@ -14,7 +16,6 @@
 (setq x-select-enable-clipboard t)
 (global-linum-mode 1)
 
-(setq user-mail-address "thang@ccs.neu.edu")
 (setq make-backup-files nil)
 (server-start)
 (column-number-mode t)
