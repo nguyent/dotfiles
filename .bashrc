@@ -25,6 +25,7 @@ if [ "$PS1" ]; then
 fi
 
 export GREP_OPTIONS='--color=auto'
+alias trim="sed 's/^ *//g'"
 alias gcd='cd `git rev-parse --show-toplevel`'
 alias gg='git grep'
 alias grh='git reset --hard HEAD'
@@ -47,4 +48,11 @@ grg()
     gcd
     gg "$@"
     cd - > /dev/null 2>&1
+}
+
+# copy the output of a command into the clipboard 
+# for example: clip !!
+clip()
+{
+    echo "$@" | pbcopy
 }
