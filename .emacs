@@ -163,7 +163,6 @@ Return a list of installed packages or nil for every skipped package."
 (global-set-key [f1] 'helm-projectile-grep)
 (global-set-key [f2] 'helm-projectile-find-file)
 
-
 (setq helm-buffers-fuzzy-matching t
       helm-recentf-fuzzy-match t)
 
@@ -172,11 +171,6 @@ Return a list of installed packages or nil for every skipped package."
 (setq projectile-completion-system 'helm)
 (helm-projectile-on)
 (helm-mode 1)
-
-;; via https://carlfg.wordpress.com/2013/10/21/insert-shebang-extension-for-emacs/
-(require 'insert-shebang)
-(add-hook 'find-file-hook 'insert-shebang)
-
 
 ;; Generated from:
 ;;   M-x name-last-kbd-macro RET (name) RET
@@ -188,3 +182,4 @@ Return a list of installed packages or nil for every skipped package."
 (global-set-key (kbd "C-x t") (fset 'lines-to-spaces
    [?\M-x ?r ?e ?p ?l ?a ?c ?e ?- ?s ?t ?r ?i ?n ?g return ?\C-q ?\C-j return ?  return]))
 
+(global-set-key (kbd "C-x w") (lambda () (interactive) (replace-regexp " +" " ")))
