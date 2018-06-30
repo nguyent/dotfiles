@@ -56,3 +56,5 @@ clip()
 {
     echo "$@" | pbcopy
 }
+
+export HISTCONTROL=ignoredups
