@@ -57,6 +57,13 @@ clip()
     echo "$@" | pbcopy
 }
 
+envconda()
+{
+    SELECTED_ENV=$(conda info --envs | grep -v '#' | awk '{print $1}' | grep . | fzf)
+    conda activate $SELECTED_ENV
+}
+
 export HISTCONTROL=ignoredups
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
