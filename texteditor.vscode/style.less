@@ -1,0 +1,54 @@
+
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+/* copied from: https://github.com/iterating/dotfiles/blob/main/texteditor.vscode/style.less */
+
+.markdown-preview.markdown-preview {
+
+  // Blue theme with card divicers between headers
+
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    line-height: 1.6;
+    font-size: 16px;
+
+  h1  {  font-size: 210%;  color: DeepSkyBlue  }  
+  h2  {  font-size: 180%; color: DeepSkyBlue }
+  h3 {  font-size: 150%; color: DeepSkyBlue  }
+  h4 { font-size: 120%; color: DeepSkyBlue  }
+  h5 {  font-size: 110%; color: DeepSkyBlue  }
+  h6 {  font-size: 100%; color: DeepSkyBlue  }
+
+
+h1, h1 ~ p, {
+    margin-left: 0%;
+}
+
+h2, h2 ~ p, {
+    margin-left: 2%;
+}
+h3, h3 ~ p, { 
+    margin-left: 10%;
+}
+h4, h4 ~ p,  {
+    margin-left: 15%;
+}
+h5, h5 ~ p, {
+    margin-left: 20%;
+}
+h6, h6 ~ p, {
+    margin-left: 25%;
+}
+
+p+:empty {
+  border: 0.5px solid deepskyblue;
+  border-radius: 25px;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 10px;
+}
+
+
+
+  // eg: background-color: blue;
+}
