@@ -33,6 +33,7 @@ alias psrv='python3 -m http.server'
 alias ppjson='python -m json.tool'
 alias src='. ~/.bashrc'
 alias grb='git rebase -i HEAD~2'
+alias cdf='cd $(ls -d */ | fzf)'
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then # via brew
    . $(brew --prefix)/etc/bash_completion
