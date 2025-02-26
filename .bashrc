@@ -80,3 +80,10 @@ export HISTCONTROL=ignoredups
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+
+## tmux-logging
+## via https://unix.stackexchange.com/questions/623054/how-to-automatically-log-all-my-tmux-sessions-to-a-file-in-directory-accordin
+if [ ! -z $TMUX ]; then
+  $HOME/.ensure_tmux_logging_on.sh
+fi
+
